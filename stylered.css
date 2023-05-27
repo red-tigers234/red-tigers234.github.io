@@ -1,0 +1,34 @@
+body {
+    background-color: azure;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+.btn2 {
+    background: transparent;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 150px;
+    height: 30px;
+    font-family: fantasy;
+
+}
+
+.btn {
+    background: transparent;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 150px;
+    height: 30px;
+    font-family: fantasy;
+}
+
+/* img src="lfcb.png" {
+    width: 150px;
+    height: 30px;
+} */
