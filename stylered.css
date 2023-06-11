@@ -98,6 +98,11 @@ ul {
     width: 20px;
 }
 
+.home img{
+    width: 30%;
+    height: 20%;
+}
+
 /* ---------------------HEADER------------------ */
 
 .logo__container {
@@ -197,12 +202,12 @@ hr {
     gap: 1rem;
 }
 
-.home aside,
-.home picture {
+/* .home aside,
+.home img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+} */
 
 .home h2 {
     font-size: 6rem;
@@ -463,7 +468,7 @@ p {
 }
 
 .t-block-teal {
-    background: linear-gradient(90deg, #1abc9c, #2ecc71, #1abc9c, #2ecc71, #1abc9c);
+    background: linear-gradient(90deg, #FDB813, #C49400, #FDB813, #C49400, #FDB813);
 }
 
 .t-block-teal h2 {
@@ -835,10 +840,10 @@ footer p a {
         justify-content: center;
         align-items: center;
         position: fixed;
-        top: 20px;
+        top: 40px;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding: 20px 0;
+        padding: 35px 47%;
         margin: 20px auto;
         height: 20px;
         background: rgba(3, 30, 71, 0.3);
@@ -847,6 +852,8 @@ footer p a {
     }
 
     .nav ul {
+        margin-left: -55px;
+        white-space: nowrap;
         display: flex;
         flex-direction: row;
         transition: 0.3s;
@@ -865,9 +872,21 @@ footer p a {
         font-weight: 800;
     }
 
+    /* Acerca de */
+    
+    .iconos{
+        margin-left: 20%;
+    }
+
+    /* los demas iconos de contactos, galeria y etc */
+
+    .icono{
+        margin-left: 30%;
+    }
+
     .nav i {
-        font-size: 0.6rem;
-        display: none;
+        font-size: 1.4rem;
+        display: block;
     }
 
     .logo__container {
@@ -875,7 +894,16 @@ footer p a {
     }
 
     .icons__header {
-        display: none;
+        position: fixed;
+        transform: translate(-50, -50%);
+        left: 91%;
+        top: 10%;
+        display: block;
+    }
+
+    .home img{
+        width: 90%;
+        height: 20%;
     }
 
 
