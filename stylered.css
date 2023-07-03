@@ -3,8 +3,8 @@
 :root {
     /* Background */
     /*   --background-page: linear-gradient(to top, #031e47 0%, #330867 100%); */
-    background: linear-gradient(230deg, #e01111, #940000, #940000, #e01111, #940000, #e01111 );
-    
+    background: linear-gradient(230deg, #e01111, #940000, #940000, #e01111, #940000, #e01111);
+
     /* Colors */
     --color-titulo: #ffffff;
     --color-header: #ffffff;
@@ -43,6 +43,34 @@ body {
     width: 100%;
     min-height: 100vh;
 }
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-x: hidden;
+    /* Oculta el desbordamiento horizontal */
+}
+
+.img-titulo img {
+    position: absolute;
+    width: 100%;
+    /* Establece un ancho para la imagen */
+    height: auto;
+    /* Permite que la altura se ajuste automáticamente */
+    max-width: 200%;
+    /* Asegura que la imagen no exceda el tamaño del contenedor */
+    transform: translateX(15%);
+    /* Mueve la imagen hacia la izquierda */
+    transform: translateY(-95%);
+    /* Mueve la imagen hacia la izquierda */
+}
+
+
+.logo-balon {
+    display: none;
+}
+
 
 /* Generals Configuration */
 .header {
@@ -98,7 +126,7 @@ ul {
     width: 20px;
 }
 
-.home img{
+.home img {
     width: 30%;
     height: 20%;
 }
@@ -111,7 +139,7 @@ ul {
     align-items: center;
     justify-content: center;
     position: relative;
-    
+
 }
 
 .logo__container div {
@@ -305,6 +333,28 @@ picture img {
     width: 360px;
     height: 360px;
 }
+
+.img-tigers img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10%;
+    left: 89%;
+    transform: translate(-50%, -50%);
+    z-index: .1;
+}
+
+
+.img-tigers2 img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 2%;
+    left: 91%;
+    transform: translate(-50%, -50%);
+    z-index: .1;
+}
+
 
 /* ---------------------ACERCA DE------------------------- */
 .about__container {
@@ -835,6 +885,26 @@ footer p a {
 /*--------------------------RESPONSIVE----------------------*/
 @media screen and (max-width: 1200px) {
 
+    .img-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .img-container {
+        margin-left: 0%;
+        width: 100%;
+        /* Establece un ancho para la imagen */
+        height: auto;
+        /* Permite que la altura se ajuste automáticamente */
+        max-width: 200%;
+        /* Asegura que la imagen no exceda el tamaño del contenedor */
+    }
+
+    .logo-balon {
+        display: block;
+    }
+
     .header {
         display: flex;
         justify-content: center;
@@ -849,6 +919,7 @@ footer p a {
         background: rgba(3, 30, 71, 0.3);
         border: none;
         border-radius: 2rem;
+        z-index: 9999;
     }
 
     .nav ul {
@@ -873,15 +944,17 @@ footer p a {
     }
 
     /* Acerca de */
-    
-    .iconos{
+
+    .iconos {
         margin-left: 20%;
+        z-index: 9999;
     }
 
     /* los demas iconos de contactos, galeria y etc */
 
-    .icono{
+    .icono {
         margin-left: 30%;
+        z-index: 9999;
     }
 
     .nav i {
@@ -901,7 +974,7 @@ footer p a {
         display: block;
     }
 
-    .home img{
+    .home img {
         width: 90%;
         height: 20%;
     }
@@ -979,6 +1052,31 @@ footer p a {
         display: none;
 
     }
+
+
+    .img-tigers img {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 10%;
+        left: 89%;
+        transform: translate(-50%, -50%);
+        z-index: .1;
+    }
+
+
+    .img-tigers2 img {
+        width: 100px !important;
+        height: 100px !important;
+        position: absolute;
+        top: 1%;
+        left: 89%;
+        transform: translate(-50%, -50%);
+        z-index: .1;
+    }
+
+
+
 
     /* ---------------------ABOUT------------------------- */
     .about__container {
