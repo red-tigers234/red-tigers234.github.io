@@ -1075,7 +1075,9 @@ footer p a {
         z-index: .1;
     }
 
-
+    .img-titulo{
+        display: none;
+    }
 
 
     /* ---------------------ABOUT------------------------- */
